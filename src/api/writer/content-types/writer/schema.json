@@ -13,9 +13,19 @@
     "timestamps": true,
     "draftAndPublish": false
   },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "picture": {
       "type": "media",
@@ -25,7 +35,12 @@
         "images",
         "files",
         "videos"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "articles": {
       "type": "relation",
@@ -34,10 +49,20 @@
       "mappedBy": "author"
     },
     "email": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "about": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
